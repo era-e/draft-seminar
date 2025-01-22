@@ -69,11 +69,28 @@
             </div>
             <div class="subsection">
                 <h4>2.3 Purpose and Goals of Access Control Models</h4>
-                <p>K</p>
+                <p>
+                    <p>Access control models are foundational frameworks designed to manage and regulate access to sensitive organizational resources. By establishing clear rules about who can access specific data or systems and under what conditions, these models play a critical role in maintaining security, ensuring compliance, and supporting operational efficiency. Their implementation is not just about limiting access; it is a proactive approach to safeguarding assets, maintaining organizational trust, and enabling scalability.</p>
+                    <p>The primary purpose of access control models is to protect sensitive information and resources from unauthorized access while ensuring that legitimate users can perform their roles without unnecessary hindrance. By doing so, these models enforce confidentiality, which ensures that information is only accessible to those with the appropriate authorization. They also preserve data integrity, preventing unauthorized modifications, and uphold availability by enabling seamless access for authorized users.</p>
+                    <p>In a world where cyberattacks and data breaches are increasingly common, the significance of access control models has grown exponentially. These frameworks act as a first line of defense, providing organizations with the tools to proactively manage threats and minimize vulnerabilities. Beyond the technical benefits, robust access control measures demonstrate an organization’s commitment to responsible data stewardship, which fosters trust among customers, partners, and stakeholders.</p>
+                    <p>By implementing strong access control systems, organizations not only protect their assets but also create an environment of transparency and accountability. This is vital in establishing and maintaining trust, which is a cornerstone of long-term success in an interconnected and competitive global market.</p>
+
+                </p>
+                <footer>
+                    <p style="color:rgba(195, 198, 201, 0.812);">Klea Haxhiu</p>
+                </footer>
             </div>
             <div class="subsection">
                 <h4>2.4 Access Control Structure</h4>
-                <p>K</p>
+               
+                    <p>The access control structure defines how access to resources is managed and enforced. It consists of three primary components: subjects, objects, and policies.</p>
+                    <p>Subjects refer to the users or entities that request access to specific resources or systems. These can include employees, applications, or even other systems that require permissions. Objects, on the other hand, are the resources or data that are being protected. These could be files, databases, network devices, or other assets within an organization. Lastly, policies represent the set of rules or conditions that determine who can access which objects and under what circumstances. These rules are crucial for ensuring that access aligns with the organization’s security protocols and compliance requirements.</p>
+                    <p>When a subject makes an access request, the system evaluates the request against these policies. Permissions are granted or denied based on predefined rules, and additional constraints—such as time, location, or specific user attributes—can be applied to ensure that access is in line with organizational requirements.</p>
+                    <p>For example, in a corporate environment, a subject, such as an employee, might request access to an object, such as a financial report. The policy governing this access might specify that the report can only be accessed during working hours and from a secure office network, ensuring both security and compliance.</p>
+    </section>
+    <footer>
+        <p style="color:rgba(195, 198, 201, 0.812);">Klea Haxhiu</p>
+    </footer>
             </div>
             <div class="subsection">
                 <h4>2.5 Challenges in applying access models to knowledge graphs</h4>
@@ -89,16 +106,64 @@
         <div class="section">
             <h2>3. Approach</h2>
             <div class="subsection">
-                <h4>3.1 Discretionary Access Control (DAC) - Scenario and in Action</h4>
-                <p>K</p>
+                <h4>3.1 Discretionary Access Control (DAC)</h4>
+                <p>Discretionary Access Control (DAC) is a type of access control in which the owner of the resource determines who can access it and what type of access they have. In DAC, access rights are granted based on the identity of the user and the permissions assigned to specific objects. The owner of the resource has the discretion to decide who can read, write, or execute the resource, making it flexible but potentially less secure.</p>
+                <p>For example, a project lead grants a manager temporary permission to edit a project document. In this case, the project lead, as the resource owner, assigns the "Edit" permission to the manager for the specific document. The system enforces this by validating the manager’s access rights before allowing any changes. If the manager’s permissions align with the owner’s delegation, access is granted, otherwise, it is denied.</p>
+                <p>DAC’s strength lies in its simplicity and adaptability, making it suitable for environments where resource owners have a clear understanding of access requirements. However, it demands ongoing monitoring to ensure permissions are up-to-date and do not expose resources to unnecessary risk.</p>
+                <figure>
+                    <img src="DAC.png" alt="Aktivitätsübersicht"/>
+                    <figcaption>
+                      <strong>Abbildung 3</strong>: Übersicht der Aktivität <a href="#r13">[13]</a>.
+                    </figcaption>
+                  </figure>
+
+                  <footer>
+                    <p style="color:rgba(195, 198, 201, 0.812);">Klea Haxhiu</p>
+                </footer>
             </div>
             <div class="subsection">
-                <h4>3.2 Mandatory Access Control (MAC) - Scenario and in Action</h4>
-                <p>K</p>
+                <h4>3.2 Mandatory Access Control (MAC)</h4>
+                <p>
+                    Mandatory Access Control (MAC) operates under strict policies set by a central authority, leaving no discretion for individual users. This model is ideal for environments requiring stringent security, such as government or military systems, as it enforces access based on predefined classifications and clearances.
+                  </p>
+                  <p>
+                    Consider a classified document labeled as "Top Secret." Only users with a "Top Secret" clearance can access it, regardless of their role or position. In this scenario, a government employee with a lower clearance, such as "Confidential," attempts to open the document. The system evaluates the user’s clearance level and denies access, ensuring that only authorized individuals with matching or higher clearances can interact with sensitive data.
+                  </p>
+                  <p>
+                    MAC’s structured approach minimizes the risk of human error by enforcing strict rules. While this enhances security, it can also limit flexibility, making it most effective in highly regulated environments where maintaining data confidentiality is paramount.
+                  </p>
+                <figure>
+                    <img src="MAC.png" alt="Aktivitätsübersicht"/>
+                    <figcaption>
+                      <strong>Abbildung 3</strong>: Übersicht der Aktivität <a href="#r13">[13]</a>.
+                    </figcaption>
+                  </figure>
+
+                  <footer>
+                    <p style="color:rgba(195, 198, 201, 0.812);">Klea Haxhiu</p>
+                </footer>
             </div>
             <div class="subsection">
                 <h4>3.3 Role-Based Access Control (RBAC)</h4>
-                <p>K</p>
+                <p>
+                    Role-Based Access Control (RBAC) assigns permissions to users based on their roles within an organization. This model streamlines access management by grouping permissions into roles, making it easier to define and enforce access rules while maintaining flexibility across different organizational structures.
+                  </p>
+                  <p>
+                    In this scenario, a user with both "Manager" and "Auditor" roles attempts to view financial records. The system evaluates the permissions associated with these roles. The "Manager" role might allow access to specific financial records required for operational decisions, while the "Auditor" role provides broader access for compliance purposes. Because the user holds both roles, the combined permissions ensure they can access the financial records relevant to their responsibilities without exceeding their authority.
+                  </p>
+                  <p>
+                    RBAC enhances security and simplifies administration by reducing the need for individual access assignments. By assigning roles that align with job responsibilities, organizations can ensure that access is both efficient and compliant with policies.
+                  </p>
+                  <figure>
+                    <img src="RBAC.png" alt="Aktivitätsübersicht" style="box-shadow: none;"/>
+                    <figcaption>
+                      <strong>Abbildung 3</strong>: Übersicht der Aktivität <a href="#r13">[13]</a>.
+                    </figcaption>
+                  </figure>
+
+                  <footer>
+                    <p style="color:rgba(195, 198, 201, 0.812);">Klea Haxhiu</p>
+                </footer>
             </div>
             <div class="subsection">
                 <h4>3.4 Attribute-Based Access Control (ABAC)</h4>
@@ -139,15 +204,52 @@
             <h2>4. Demo</h2>
             <div class="subsection">
                 <h4>4.1 Granularity</h4>
-                <p>K</p>
+                <p>Granularity in access control refers to the level of precision and detail in defining and enforcing access rules. It determines how specific the policies are when granting or denying access to resources. At the lower end of the granularity spectrum, rules are broad and apply to larger groups or categories, making them simpler to manage but less precise in addressing unique access requirements.</p>
+
+                <p>As granularity increases, access control policies become more detailed, focusing on specific attributes such as the individual user, resource type, or environmental conditions. At the highest level, access decisions can be made dynamically in real-time, factoring in multiple changing conditions such as location, time, or device security status.</p>
+              
+                <p>While higher granularity improves security by minimizing unauthorized access and tailoring permissions to exact needs, it introduces greater complexity in management and implementation. Lower granularity, on the other hand, simplifies administration but may lack the precision necessary for environments requiring strict access control. Finding the right balance between granularity and manageability is crucial for effective and scalable access control in any organization.</p>
+                <footer>
+                    <p style="color:rgba(195, 198, 201, 0.812);">Klea Haxhiu</p>
+                </footer>
             </div>
             <div class="subsection">
                 <h4>4.2 Comparison of granularity</h4>
                 <p>K+E.</p>
             </div>
             <div class="subsection">
-                <h4>4.3 Emerging trends</h4>
-                <p>K</p>
+                <h4>4.3 Emerging Trends</h4>
+                <p>
+                    In this section, we focus on the innovative technologies that are shaping access control for knowledge graphs. With the growing importance of data security and privacy, new trends such as blockchain, AI, machine learning, and federated learning are playing a crucial role in enhancing access control systems.
+                </p>
+
+                <strong>Blockchain Technology</strong>
+                <p>
+                    Blockchain is increasingly being used to ensure robust data integrity in access control systems. It functions as a decentralized digital ledger that makes it difficult for unauthorized users to tamper with data. The main advantage of blockchain is its transparency and immutability—once data is added to the blockchain, it cannot be altered without consensus from the network. This provides a secure and reliable way to track changes in access permissions, making it highly suitable for scenarios requiring verifiable audit trails, such as in knowledge graphs <a href="https://www.example.com">[1]</a> <a href="https://www.axiomatics.com">[2]</a>.
+                </p>
+
+                <strong>Machine Learning and AI-Driven Access Control</strong>
+                <p>
+                    Machine learning is a powerful tool for adapting access control policies in real-time. It analyzes patterns in user behavior, access requests, and environmental conditions to determine who should be granted access to which resources. By continuously learning from these patterns, machine learning-based systems can automatically update and optimize access control rules. This helps ensure that access policies evolve with changing security needs and user behaviors, providing a more dynamic and responsive approach to security <a href="https://www.example.com">[3]</a>.
+                </p>
+                <p>
+                    AI-driven security extends the capabilities of machine learning by adding predictive analysis and automated decision-making. AI systems can monitor access patterns and predict potential security threats, adjusting access control policies proactively to prevent unauthorized access <a href="https://www.wallarm.com">[4]</a>.
+                </p>
+
+                <strong>Federated Learning</strong>
+                <p>
+                    Federated learning is a cutting-edge technique that enhances privacy in access control systems. It enables multiple parties to collaboratively train machine learning models without sharing sensitive data. Instead of transferring raw data, each participant only shares model updates, preserving privacy while still benefiting from collective insights. This approach is particularly valuable in scenarios where data privacy is paramount, such as in healthcare, finance, and other industries dealing with sensitive information <a href="https://www.example.com">[5]</a>.
+                </p>
+
+                <strong>Conclusion</strong>
+                <p>
+                    These emerging trends—blockchain, machine learning, AI-driven security, and federated learning—represent significant advancements in how access control for knowledge graphs is implemented. By integrating these technologies, organizations can enhance both the security and privacy of their data while ensuring compliance with ever-evolving regulatory requirements.
+                </p>
+
+
+                <footer>
+                    <p style="color:rgba(195, 198, 201, 0.812);">Klea Haxhiu</p>
+                </footer>
             </div>
         </div>
 
