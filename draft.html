@@ -21,8 +21,7 @@
     </header>
 
     <div class="container">
-        <h1>Access Control Models for Knowledge Graphs</h1>
-        <p class="authors">Prepared by: Era Z and Klea H</p>
+        
 
         <div class="section">
             <h2>1. Introduction</h2>
@@ -43,9 +42,9 @@
                 <p>  In the given example, entities such as "Mr. Bean," "Rowan Atkinson," and "Emmy Awards" are linked through relationships like "is starred by" and "is awarded." These relationships help structure data in an intuitive way, enabling better insights and decision-making by capturing real-world connections between different concepts. Knowledge graphs are widely used in various domains, including entertainment, academia, and healthcare, to provide context and improve data accessibility [1].
                 </p>
                 <figure>
-                    <img src="activity_c.png" alt="Aktivitätsübersicht"/>
+                    <img src="knowledge_graph_illustration.png" alt=""/>
                     <figcaption>
-                      <strong>Abbildung 3</strong>: Übersicht der Aktivität <a href="#r13">[13]</a>.
+                      <strong>Image 1</strong>: Übersicht der Aktivität 
                     </figcaption>
                   </figure>
             </div>
@@ -54,6 +53,7 @@
 
         <div class="section">
             <h2>2. Background</h2>
+            <p>This section provides an overview of knowledge graphs, their importance, the need for access control, the purpose and goals of access control models, their structure, and the challenges involved in applying them.</p>
             <div class="subsection">
                 <h4>2.1 Why are Knowledge Graphs Important</h4>
             <p>Knowledge graphs help connect and organize information from different sources, making data easier to find and understand. They improve decision-making, streamline operations, and automate tasks by linking related data with added meaning. Businesses use them to combine information from databases, documents, and websites, leading to better efficiency and planning.
@@ -87,7 +87,8 @@
         </div>
 
         <div class="section">
-            <h2>3. Approach</h2>
+            <h2>3. Exploring Access Control Models</h2>
+            <p>This section provides an in-depth exploration of various access control models, each offering unique approaches to managing and securing access to resources based on different criteria and conditions.</p>
             <div class="subsection">
                 <h4>3.1 Discretionary Access Control (DAC) - Scenario and in Action</h4>
                 <p>K</p>
@@ -110,9 +111,9 @@
 
                 </div>
             <figure>
-                <img src="activity_c.png" alt="Aktivitätsübersicht"/>
+                <img src="ABAC-1.png" alt="Aktivitätsübersicht"/>
                 <figcaption>
-                  <strong>Abbildung 3</strong>: Übersicht der Aktivität <a href="#r13">[13]</a>.
+                  <strong>Image 2</strong>:How does ABAC work <a href="#r2">[2]</a>.
                 </figcaption>
               </figure>
             <div class="subsection">
@@ -143,7 +144,49 @@
             </div>
             <div class="subsection">
                 <h4>4.2 Comparison of granularity</h4>
-                <p>K+E.</p>
+                <table border="1" style="border-collapse: collapse; width: 100%;">
+                    <tr>
+                        <th style="text-align: center; padding: 10px;">Access Control Model</th>
+                        <th style="text-align: center; padding: 10px;">Granularity</th>
+                        <th style="text-align: center; padding: 10px;">Explanation</th>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center; padding: 10px;">ABAC</td>
+                        <td style="text-align: center; padding: 10px;">Very High</td>
+                        <td style="text-align: center; padding: 10px;">Access is based on multiple user, resource, and environmental attributes, offering fine-grained control.</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center; padding: 10px;">PBAC</td>
+                        <td style="text-align: center; padding: 10px;">Very High</td>
+                        <td style="text-align: center; padding: 10px;">Access is determined dynamically based on defined policies, which can incorporate attributes like user role, resource type, location, and time. Offers highly granular and flexible access control.</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center; padding: 10px;">GBAC</td>
+                        <td style="text-align: center; padding: 10px;">Low to Medium</td>
+                        <td style="text-align: center; padding: 10px;">Access is granted based on group membership, offering lower granularity compared to individual attributes.</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center; padding: 10px;">UCON</td>
+                        <td style="text-align: center; padding: 10px;">Very High</td>
+                        <td style="text-align: center; padding: 10px;">Access is dynamically controlled based on subject and object attributes, allowing real-time, fine-grained access decisions.</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center; padding: 10px;">DAC</td>
+                        <td style="text-align: center; padding: 10px;">High</td>
+                        <td style="text-align: center; padding: 10px;">Access control is based on user and resource ownership, offering fine-grained control over individual resources and permissions.</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center; padding: 10px;">MAC</td>
+                        <td style="text-align: center; padding: 10px;">High</td>
+                        <td style="text-align: center; padding: 10px;">Strict, centralized control based on security labels, offering high granularity for enforcing access policies.</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center; padding: 10px;">RBAC</td>
+                        <td style="text-align: center; padding: 10px;">Medium to High</td>
+                        <td style="text-align: center; padding: 10px;">Access is granted based on roles assigned to users, allowing structured and scalable control. Granularity depends on how roles and permissions are defined.</td>
+                    </tr>
+                </table>
+                
             </div>
             <div class="subsection">
                 <h4>4.3 Emerging trends</h4>
@@ -153,18 +196,20 @@
 
         <div class="section">
             <h2>5. Conclusion</h2>
+            <p>These findings highlight the importance of selecting the right access control model based on specific security and operational requirements.</p>
             <div class="subsection">
-                <h4>5.1 Future directions in access control models for knowledge graphs</h4>
-                <p>K+E</p>
+                <h4>5.1 Summary of findings</h4>
+                <p>We explored seven access control models, focusing on their granularity and how they manage access to resources. We found that models like ABAC, PBAC, and UCON provide very high granularity by considering multiple attributes, allowing fine-grained and flexible control. On the other hand, models such as GBAC and RBAC offer lower granularity by relying on group memberships or predefined roles. DAC and MAC provide a balance by offering high granularity through ownership and security labels. Understanding these models helps in choosing the right approach based on security needs and system complexity.</p>
+                <h4>5.2 Future directions in access control models for knowledge graphs</h4>
+                <p>In the future, access control models for knowledge graphs will need to become more flexible and efficient to handle growing data complexity. New methods may focus on using AI and machine learning to improve decision-making and automate permissions. Standardized metadata tagging and real-time updates will also be important to ensure consistent security. Additionally, scalable solutions will be needed to support large and evolving graphs without slowing down performance.</p>
             </div>
         </div>
 
         <div class="section">
             <h2>6. References</h2>
          
-                <h2>6. Literaturverzeichnis</h2>
              <p class="reference" id="r1">[1] Barth, Dave (2013, August 13). Google Cloud Storage now provides server-side encryption [Online]. Available: <a href="http://googlecloudplatform.blogspot.de/2013/08/google-cloud-storage-now-provides.html">http://googlecloudplatform.blogspot.de/2013/08/google-cloud-storage-now-provides.html</a> (28.06.2014)</p>
-             <p class="reference" id="r2">[2] BitTorrent Sync [Online]. Available: <a href="http://www.bittorentsync.com">http://www.bittorentsync.com</a> (29.06.2014)</p>
+             <p class="reference" id="r2">[2] Axiomatics, "Intro to Attribute-Based Access Control (ABAC)," Axiomatics Blog, [Online]. Available: <a href=https://axiomatics.com/blog/intro-to-attribute-based-access-control-abac.>https://axiomatics.com/blog/intro-to-attribute-based-access-control-abac.</a> (18.012.2024)</p>
              <p class="reference" id="r3">[3] Borgmann, Moritz et al. "On the Security of Cloud Storage". Fraunhofer Gesellschaft SIT. Darmstadt. SIT Technical Reports. SIT-TR-2012-001.  March 2012</p>
              <p class="reference" id="r4">[4] Boxcryptor [Online]. Available: <a href="http://www.boxcrypotr.com">http://www.boxcryptor.com</a> (29.06.2014)</p>
              <p class="reference" id="r5">[5] Connect.de. So Installieren Sie ownCloud auf einem Raspberry Pi [Online]. Available <a href="http://www.connect.de/ratgeber/so-installieren-sie-owncloud-auf-einem-raspberry-pi-1540246.html">http://www.connect.de/ratgeber/so-installieren-sie-owncloud-auf-einem-raspberry-pi-1540246.html</a> (29.06.2014)</p>
