@@ -41,15 +41,16 @@
                 <p> In a knowledge graph, <i>nodes</i> serve as representations of entities, objects, or literals. Entities typically include real-world things such as people, places, or organizations, like "Albert Einstein," "New York City," or "Google Inc." Objects, on the other hand, are usually items associated with actions or events, such as a document titled "Company Report.pdf" linked to an organization. Literals represent basic values such as dates, numbers, or textual descriptions, providing additional attributes to enhance the understanding of entities.  </p>
                 <p> <i>Edges</i>, which connect nodes, define the relationships that exist between them. These relationships provide meaningful context, illustrating how various elements are interconnected. For example, an edge might describe that "Albert Einstein" is "associated with" "the theory of relativity," or that "Google Inc." is "headquartered in" "Mountain View." By linking nodes through well-defined relationships, knowledge graphs create a web of interconnected data that can be queried and analyzed efficiently.  
                 </p>
-                <p>  In the given example, entities such as "Mr. Bean," "Rowan Atkinson," and "Emmy Awards" are linked through relationships like "is starred by" and "is awarded." These relationships help structure data in an intuitive way, enabling better insights and decision-making by capturing real-world connections between different concepts [1].
-                </p>
+                <p>  In the given example, entities such as "Mr. Bean," "Rowan Atkinson," and "Emmy Awards" are linked through relationships like "is starred by" and "is awarded." These relationships help structure data in an intuitive way, enabling better insights and decision-making by capturing real-world connections between different concepts .
+                    <a href="#r1">[1]</a> </p>
                 <footer>
                     <p style="color:rgba(195, 198, 201, 0.812);">Erisa Zaimi</p>
                 </footer>
                 <figure>
                     <img src="knowledge_graph_illustration.png" alt=""/>
                     <figcaption>
-                      <strong>Image 1</strong>:Knowledge Graph Illustration
+                       
+                      <strong> <p class="reference" id="r1"></p>Image 1</strong>:Knowledge Graph Illustration
                     </figcaption>
                   </figure>
             </div>
@@ -63,7 +64,8 @@
                 <h4>2.1 Why are Knowledge Graphs Important</h4>
             <p>Knowledge graphs help connect and organize information from different sources, making data easier to find and understand. They improve decision-making, streamline operations, and automate tasks by linking related data with added meaning. Businesses use them to combine information from databases, documents, and websites, leading to better efficiency and planning.
             <p>They also support AI and machine learning by helping search engines provide better results and e-commerce platforms recommend products. In healthcare, they link patient records for better care, while in finance, they help detect fraud and analyze risks. Knowledge graphs are becoming essential for managing growing data and driving innovation across industries.
-            </p>
+                <a href="#r2">[2]</a><a href="#r3">[3]</a></p>
+            
             </p> 
             <footer>
                 <p style="color:rgba(195, 198, 201, 0.812);">Erisa Zaimi</p>
@@ -72,7 +74,9 @@
             <div class="subsection">
                 <h4>2.2 Why Do Knowledge Graphs Need Access Control</h4>
 
-               <p>Knowledge graphs gather data from various sources, making access control essential to protect sensitive information like financial records and health data. Without proper controls, unauthorized access can lead to serious risks such as financial loss and legal penalties. Regulations like GDPR and HIPAA require strict data handling, and access control helps ensure compliance by restricting access to authorized users only. It also maintains data accuracy by preventing unauthorized changes, ensuring reliable insights for decision-making.</p>
+               <p>Knowledge graphs gather data from various sources, making access control essential to protect sensitive information like financial records and health data. Without proper controls, unauthorized access can lead to serious risks such as financial loss and legal penalties. Regulations like GDPR and HIPAA require strict data handling, and access control helps ensure compliance by restricting access to authorized users only. It also maintains data accuracy by preventing unauthorized changes, ensuring reliable insights for decision-making.
+                <a href="#r4">[4]</a>
+               </p>
                <footer>
                 <p style="color:rgba(195, 198, 201, 0.812);">Erisa Zaimi</p>
             </footer>
@@ -111,6 +115,7 @@
                 <p>Scalability is a major issue for access control in knowledge graphs. As the graph grows and adds new data, permissions need to be updated, and access models must adapt to these changes. A scalable system should allow real-time updates and ensure secure, efficient management of access across large, complex graphs.</p>
                 <p>Knowledge graphs often require context-based access policies, where access decisions depend on dynamic factors such as user roles, time of access, or query intent. Implementing context-aware policies can be complex and may require sophisticated inference mechanisms.
                 <p>Even if certain nodes or edges are restricted, users might infer sensitive information by analyzing available data patterns and relationships. Preventing such inference attacks while maintaining the graph’s usability is a significant challenge.
+                    <a href="#r6">[6]</a> <a href="#r7">[7]</a>
                 </p>
                 </p>
                 <footer>
@@ -188,7 +193,9 @@
 
                 <p>For example, if a manager tries to access a confidential report at 2:00 PM, the system evaluates their attributes, such as their role as 'Manager' and department as 'Leadership,' to determine their eligibility. Environmental factors like time and location are also considered, ensuring access is granted only during business hours and from approved locations, adding an extra security layer.</p>
 
-                <p>The system also checks the resource and action attributes, such as whether the manager wants to view or modify the report. Depending on the policy, they may be allowed to view the report but not edit or delete it. By analyzing all these factors together, ABAC provides a more secure and adaptable access control system, making it ideal for modern, complex environments.</p>
+                <p>The system also checks the resource and action attributes, such as whether the manager wants to view or modify the report. Depending on the policy, they may be allowed to view the report but not edit or delete it. By analyzing all these factors together, ABAC provides a more secure and adaptable access control system, making it ideal for modern, complex environments.
+                    <a href="#r8">[8]</a> <a href="#r9">[9]</a>
+                </p>
 
                 </div>
                 <footer>
@@ -197,14 +204,16 @@
             <figure>
                 <img src="ABAC-1.png" alt="Aktivitätsübersicht"/>
                 <figcaption>
-                  <strong>Image 5</strong>:How does ABAC work <a href="#r5">[5]</a>.
+                  <strong>Image 5</strong>:How does ABAC work <a href="#r22">[22]</a>.
                 </figcaption>
               </figure>
             <div class="subsection">
                 <h4>3.5 Policy-Based Access Control (PBAC)</h4>
                 <p>Policy-Based Access Control (PBAC) determines access to resources based on predefined policies, which are typically rules set by the organization to manage access control. These policies define the conditions under which certain resources can be accessed. PBAC is particularly useful for organizations that need to enforce complex security requirements and conditional access based on multiple factors, such as user attributes, time, or location.</p>
                 <p>In this scenario, the policy states that only employees in the Marketing department can access the "Marketing Strategy" document, but this access is conditioned on two factors: the employee’s department and their working environment. The first condition requires the employee to belong to the Marketing department, which restricts access to only a specific group of employees. The second condition requires the employee to be working remotely during business hours, which is defined as 9 AM to 5 PM. This condition ensures that the document is accessible only under the right circumstances (working remotely within a specified time frame). If both conditions are satisfied, access to the document is granted; otherwise, access is denied, regardless of the employee’s role or other permissions they may have.</p>
-                <p>This policy-based approach ensures that access is granted based on clear, predefined conditions, making it easier for organizations to manage complex access control requirements across different departments, locations, and times.</p>
+                <p>This policy-based approach ensures that access is granted based on clear, predefined conditions, making it easier for organizations to manage complex access control requirements across different departments, locations, and times.
+                    <a href="#r6">[10]</a>
+                </p>
                 <footer>
                     <p style="color:rgba(195, 198, 201, 0.812);">Erisa Zaimi</p>
                 </footer>
@@ -213,7 +222,9 @@
                 <h4>3.6 Graph-Based Access Control (GBAC)</h4>
                 <p>Graph-Based Access Control (GBAC) leverages the relationships between entities in a graph to determine access permissions. The structure of the graph defines how nodes (representing entities such as users or resources) are connected by edges (representing relationships). GBAC ensures that access decisions are made based on the interrelationships between users and resources within the graph, making it ideal for scenarios where access is governed by complex and dynamic relationships.</p>
                 <p>In this scenario, Alice wants to view a photo shared by Bob on Facebook. The knowledge graph contains the following nodes and edges: Alice (User), Bob (User), and Photo (Resource). There are also edges that define relationships, such as "Alice → Is Friend Of → Bob" and "Bob → Shared Photo → Friends Only." These relationships are key to determining whether Alice can view the photo. Since Alice is a friend of Bob (as indicated by the "Is Friend Of" relationship), and Bob has shared the photo with a "Friends Only" restriction, Alice is granted access to view the photo. If Alice and Bob were not friends or if Bob had set a different sharing policy (e.g., "Only Me"), Alice would not have been able to access the photo.</p>
-                <p>In GBAC, access decisions are driven by the specific relationships between users and resources, making it a powerful model for handling dynamic access control in social networks and other systems where user interactions form the basis of access permissions.</p>
+                <p>In GBAC, access decisions are driven by the specific relationships between users and resources, making it a powerful model for handling dynamic access control in social networks and other systems where user interactions form the basis of access permissions.
+                    <a href="#r6">[11]</a>
+                </p>
             </div>
             <footer>
                 <p style="color:rgba(195, 198, 201, 0.812);">Erisa Zaimi</p>
@@ -221,7 +232,9 @@
             <div class="subsection">
                 <h4>3.7 Usage Control (UCON)</h4>
                 <p>Usage Control (UCON) is a model that goes beyond traditional access control systems by considering dynamic conditions and continuous evaluation of access during a user's session. Unlike static access models that grant or deny access based on a single evaluation at the moment of request, UCON evaluates access in real-time throughout the interaction. This dynamic approach allows for access to be revoked or modified mid-session if conditions change, enhancing security and ensuring that the policies are consistently enforced.</p>
-                <p>UCON integrates Subject Attributes (SA), Object Attributes (OA), and environmental conditions into its decision-making process. Subject Attributes might include details about the user, such as their role or department, while Object Attributes describe characteristics of the resource being accessed. The combination of these attributes, along with real-time conditions (such as time of access or user behavior), helps UCON enforce policies more effectively. For example, if a user starts a session with access to sensitive information but later violates a policy (e.g., by trying to copy data), the system can immediately revoke access to prevent further action. This makes UCON an excellent solution for scenarios where conditions may evolve and require continuous enforcement of security measures.</p>
+                <p>UCON integrates Subject Attributes (SA), Object Attributes (OA), and environmental conditions into its decision-making process. Subject Attributes might include details about the user, such as their role or department, while Object Attributes describe characteristics of the resource being accessed. The combination of these attributes, along with real-time conditions (such as time of access or user behavior), helps UCON enforce policies more effectively. For example, if a user starts a session with access to sensitive information but later violates a policy (e.g., by trying to copy data), the system can immediately revoke access to prevent further action. This makes UCON an excellent solution for scenarios where conditions may evolve and require continuous enforcement of security measures.
+                    <a href="#r6">[12]</a> <a href="#r6">[13]</a>
+                </p>
             </div>
             <footer>
                 <p style="color:rgba(195, 198, 201, 0.812);">Erisa Zaimi</p>
@@ -229,7 +242,7 @@
             <figure>
                 <img src="ucon.png" alt="Aktivitätsübersicht"/>
                 <figcaption>
-                  <strong>Image 6</strong>: How does UCON work <a href="#r6">[6]</a>.
+                  <strong>Image 6</strong>: How does UCON work <a href="#r23">[23]</a>.
                 </figcaption>
               </figure>
         </div>
@@ -349,18 +362,24 @@
         <div class="section">
             <h2>6. References</h2>
          
-             <p class="reference" id="r1">[1] Barth, Dave (2013, August 13). Google Cloud Storage now provides server-side encryption [Online]. Available: <a href="http://googlecloudplatform.blogspot.de/2013/08/google-cloud-storage-now-provides.html">http://googlecloudplatform.blogspot.de/2013/08/google-cloud-storage-now-provides.html</a> (28.06.2014)</p>
-             <p class="reference" id="r5">[5] Axiomatics, "Intro to Attribute-Based Access Control (ABAC)," Axiomatics Blog, [Online]. Available: <a href=https://axiomatics.com/blog/intro-to-attribute-based-access-control-abac.>https://axiomatics.com/blog/intro-to-attribute-based-access-control-abac.</a> (18.012.2024)</p>
-             <p class="reference" id="r3">[3] Borgmann, Moritz et al. "On the Security of Cloud Storage". Fraunhofer Gesellschaft SIT. Darmstadt. SIT Technical Reports. SIT-TR-2012-001.  March 2012</p>
-             <p class="reference" id="r4">[4] Boxcryptor [Online]. Available: <a href="http://www.boxcrypotr.com">http://www.boxcryptor.com</a> (29.06.2014)</p>
-             <p class="reference" id="r6">[6] M. A. Elrakaiby, A. El-Moussa, H. Barada, and W. El-Hajj, "Situational Awareness based Risk-Adapatable Access Control in Enterprise Networks," ResearchGate, [Online]. Available: <a href="https://www.researchgate.net/publication/316871105">https://www.researchgate.net/publication/316871105</a>  (23.01.2025)</p>
-             <p class="reference" id="r7">[7] Dropbox [Online]. Available: <a href="http://www.driobox.com">http://www.dropbox.com</a> (29.06.2014)</p>
-             <p class="reference" id="r8"> [8] Google Drive [Online]. Available: <a href="http://www.drive.google.com">http://drive.google.com</a> (29.06.2014)</p>
-             <p class="reference" id="r9"> [9] H., Muhamed (2014, January). Raspberry Pi - ownCloud installieren Anleitung [Online]. Available: <a href="http://linuxwelt.blogspot.de/2014/01/raspberry-pi-owncloud-installieren.html">http://linuxwelt.blogspot.de/2014/01/raspberry-pi-owncloud-installieren.html</a> (02.07.2014)</p>
-             <p class="reference" id="r10"> [10] ownCloud [Online]. Available: <a href="http://www.owncloud.org">http://www.owncloud.org</a> (01.07.2014)</p> 
-             <p class="reference" id="r11">[11] Simonite, Tom (2014, January 17). Sync Your Files without Trusting the Cloud [Online]. Available <a href="http://www.technologyreview.com/news/522516/sync-your-files-without-trusting-the-cloud/">http://www.technologyreview.com/news/522516/sync-your-files-without-trusting-the-cloud/</a> (29.06.2014)</p>
-             <p class="reference" id="r12">[12] Thoma, Jörg (2014, April 15). OwnCloud - Dropbox Alternative fürs Heimnetzwerk [Online]. Available <a href="http://www.golem.de/news/owncloud-dropbox-alternative-fuers-heimnetzwerk-1404-105843.html">http://www.golem.de/news/owncloud-dropbox-alternative-fuers-heimnetzwerk-1404-105843.html</a> (29.06.2014)</p>
-             <p class="reference" id="r13"> [13] eigene aufgesetzte ownCloud </p> 
+             <p class="reference" id="r2">[2]A. Hogan, et al., "Knowledge graphs," ACM Computing Surveys (CSUR), vol. 54, no. 4, pp. 1-37, 2021. [Online]. Available: <a href="https://dl.acm.org/doi/10.1145/3447772">https://dl.acm.org/doi/10.1145/3447772.</a> (19.12.2024)</p>
+             <p class="reference" id="r3">[3] H. Paulheim, "Knowledge graph refinement: A survey of approaches and evaluation methods," Semantic Web, vol. 8, no. 3, pp. 489-508, 2017. [Online]. Available: <a href="https://journals.sagepub.com/doi/abs/10.3233/SW-160218?journalCode=swja">https://journals.sagepub.com/doi/abs/10.3233/SW-160218?journalCode=swja</a>  (22.12.2024)</p>
+             <p class="reference" id="r4">[4] M. You, J. Yin, H. Wang, J. Cao, K. Wang, Y. Miao, and E. Bertino, "A knowledge graph empowered online learning framework for access control decision-making," World Wide Web, vol. 26, pp. 827-848, 2023. [Online]. Available: <a href="http://www.boxcrypotr.com">http://www.boxcryptor.com</a> (29.06.2014)</p>
+             <p class="reference" id="r5">[5] Axiomatics, "Intro to Attribute-Based Access Control (ABAC)," Axiomatics Blog, [Online]. Available: <a href="https://link.springer.com/article/10.1007/s11280-022-01076-5">https://link.springer.com/article/10.1007/s11280-022-01076-5</a> (18.12.2024)</p>
+             <p class="reference" id="r5">[6] C. Peng, F. Xia, M. Naseriparsa, and F. Osborne, "Knowledge Graphs: Opportunities and Challenges," Artificial Intelligence Review, vol. 56, pp. 13071-13102, 2023. [Online]. Available: <a href="https://link.springer.com/article/10.1007/s10462-023-10465-9">https://link.springer.com/article/10.1007/s10462-023-10465-9</a> (23.01.2025)</p>
+             <p class="reference" id="r6">[7] M. Hofer, D. Obraczka, A. Saeedi, H. Köpcke, and E. Rahm, "Construction of Knowledge Graphs: Current State and Challenges," Information, vol. 15, no. 8, pp. 509-529, 2024. [Online]. Available: <a href="https://doi.org/10.3390/info15080509">https://doi.org/10.3390/info15080509</a> (23.01.2025)</p>
+             <p class="reference" id="r8">[8] Casey, Keith, "What Is Attribute-Based Access Control (ABAC)?," <i>Okta Blog</i>, 2020. [Online]. Available: <a href="https://www.okta.com/blog/2020/09/attribute-based-access-control-abac/">https://www.okta.com/blog/2020/09/attribute-based-access-control-abac/</a>(19.12.2024)</p>
+             <p class="reference" id="r9">[9] Microsoft, "What is Azure Attribute-Based Access Control (Azure ABAC)?," <i>Microsoft Learn</i>, 2023. [Online]. Available: <a href="https://learn.microsoft.com/en-us/azure/role-based-access-control/conditions-overview">https://learn.microsoft.com/en-us/azure/role-based-access-control/conditions-overview</a>(20.12.2024)</p>
+             <p class="reference" id="r10">[10] Heimdal Security, "Policy-Based Access Control (PBAC) - The Complete Know How for Organizations," Heimdal Security Blog, 2023. [Online]. Available: <a href="https://heimdalsecurity.com/blog/policy-based-access-control/">https://heimdalsecurity.com/blog/policy-based-access-control/</a>(20.12.2024)</p>
+             <p class="reference" id="r11">[11] M. B. Almeida, F. M. Ribeiro, and F. L. Bezerra, "Graph-Based Access Control: What, Why and How," <i>KuppingerCole</i>, 2023. [Online]. Available: <a href="https://www.kuppingercole.com/watch/graph-based-access-control-eic2023">https://www.kuppingercole.com/watch/graph-based-access-control-eic2023</a>(27.12.2024)</p>
+             <p class="reference" id="r12">[12] Sandhu, Ravi, and Jaehong Park, "Usage Control: A Vision for Next Generation Access Control," <i>Lecture Notes in Computer Science</i>, vol. 2776, pp. 17-31, 2003. [Online]. Available: <a href="https://link.springer.com/chapter/10.1007/978-3-540-45215-7_2">https://link.springer.com/chapter/10.1007/978-3-540-45215-7_2</a>(27.12.2024)</p>
+             <p class="reference" id="r13">[13] Park, Jaehong, and Ravi Sandhu, "Towards Usage Control Models: Beyond Traditional Access Control," <i>Proceedings of the 7th ACM Symposium on Access Control Models and Technologies</i>, 2002. [Online]. Available: <a href="https://profsandhu.com/confrnc/sacmat/2002-UCON.pdf">https://profsandhu.com/confrnc/sacmat/2002-UCON.pdf</a>(27.12.2024)</p>
+             
+             
+             <!-- Images -->
+             <p class="reference" id="r22">[22] Axiomatics, "Intro to Attribute-Based Access Control (ABAC)," <i>Axiomatics Blog</i>, 2018. [Online]. Available: <a href="https://axiomatics.com/blog/intro-to-attribute-based-access-control-abac">https://axiomatics.com/blog/intro-to-attribute-based-access-control-abac</a>(5.10.2024)</p>
+             <p class="reference" id="r23">[23] S. Kandala, R. Sandhu, and V. Bhamidipati, "UCON Model with RAdAC Components," <i>ResearchGate</i>, 2011. [Online]. Available: <a href="https://www.researchgate.net/figure/UCON-Model-with-RAdAC-Components-from-Kandala-Sandhu-and-Bhamidipati-2011-Kandala_fig1_316871105">https://www.researchgate.net/figure/UCON-Model-with-RAdAC-Components-from-Kandala-Sandhu-and-Bhamidipati-2011-Kandala_fig1_316871105</a>(9.11.2024)</p>
+
      
         </div>
     </div>
