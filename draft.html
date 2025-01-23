@@ -12,8 +12,7 @@
         <h2>Seminar Web Engineering in Summer Semester 2024</h2>
 		<h1>Access Control Models for Knowledge Graphs</h1>
         <h2 class="author">Erisa Zaimi & Klea Haxhiu</h2>
-        <h2 class="author">Advisor:Christoph Göpfert, M.Sc.
-            Research Associate</h2>
+        <h2 class="author">Advisor:</h2>
 		<h4 class="affiliation">
 			Professur Verteilte und Selbstorganisierende Rechnersysteme<br/>
 			Technische Universität Chemnitz<br/>
@@ -85,12 +84,10 @@
             <div class="subsection">
                 <h4>2.3 Purpose and Goals of Access Control Models</h4>
                 <p>
-                    <p>Access control models are foundational frameworks designed to manage and regulate access to sensitive organizational resources. By establishing clear rules about who can access specific data or systems and under what conditions, these models play a critical role in maintaining security, ensuring compliance, and supporting operational efficiency. Their implementation is not just about limiting access, it is a proactive approach to safeguarding assets, maintaining organizational trust, and enabling scalability.</p>
+                    <p>Access control models are foundational frameworks designed to manage and regulate access to sensitive organizational resources. By establishing clear rules about who can access specific data or systems and under what conditions, these models play a critical role in maintaining security, ensuring compliance, and supporting operational efficiency. Their implementation is not just about limiting access; it is a proactive approach to safeguarding assets, maintaining organizational trust, and enabling scalability.</p>
                     <p>The primary purpose of access control models is to protect sensitive information and resources from unauthorized access while ensuring that legitimate users can perform their roles without unnecessary hindrance. By doing so, these models enforce confidentiality, which ensures that information is only accessible to those with the appropriate authorization. They also preserve data integrity, preventing unauthorized modifications, and uphold availability by enabling seamless access for authorized users.</p>
                     <p>In a world where cyberattacks and data breaches are increasingly common, the significance of access control models has grown exponentially. These frameworks act as a first line of defense, providing organizations with the tools to proactively manage threats and minimize vulnerabilities. Beyond the technical benefits, robust access control measures demonstrate an organization’s commitment to responsible data stewardship, which fosters trust among customers, partners, and stakeholders.</p>
-                    <p>By implementing strong access control systems, organizations not only protect their assets but also create an environment of transparency and accountability. This is vital in establishing and maintaining trust, which is a cornerstone of long-term success in an interconnected and competitive global market.
-                        <a href="#r15">[15]</a>   <a href="#r16">[16]</a>
-                    </p>
+                    <p>By implementing strong access control systems, organizations not only protect their assets but also create an environment of transparency and accountability. This is vital in establishing and maintaining trust, which is a cornerstone of long-term success in an interconnected and competitive global market.</p>
 
                 </p>
                 <footer>
@@ -103,9 +100,7 @@
                     <p>The access control structure defines how access to resources is managed and enforced. It consists of three primary components: subjects, objects, and policies.</p>
                     <p>Subjects refer to the users or entities that request access to specific resources or systems. These can include employees, applications, or even other systems that require permissions. Objects, on the other hand, are the resources or data that are being protected. These could be files, databases, network devices, or other assets within an organization. Lastly, policies represent the set of rules or conditions that determine who can access which objects and under what circumstances. These rules are crucial for ensuring that access aligns with the organization’s security protocols and compliance requirements.</p>
                     <p>When a subject makes an access request, the system evaluates the request against these policies. Permissions are granted or denied based on predefined rules, and additional constraints—such as time, location, or specific user attributes—can be applied to ensure that access is in line with organizational requirements.</p>
-                    <p>For example, in a corporate environment, a subject, such as an employee, might request access to an object, such as a financial report. The policy governing this access might specify that the report can only be accessed during working hours and from a secure office network, ensuring both security and compliance.
-                        <a href="#r16">[16]</a>
-                    </p>
+                    <p>For example, in a corporate environment, a subject, such as an employee, might request access to an object, such as a financial report. The policy governing this access might specify that the report can only be accessed during working hours and from a secure office network, ensuring both security and compliance.</p>
     </section>
     <footer>
         <p style="color:rgba(195, 198, 201, 0.812);">Klea Haxhiu</p>
@@ -136,13 +131,11 @@
                 <h4>3.1 Discretionary Access Control (DAC)</h4>
                 <p>Discretionary Access Control (DAC) is a type of access control in which the owner of the resource determines who can access it and what type of access they have. In DAC, access rights are granted based on the identity of the user and the permissions assigned to specific objects. The owner of the resource has the discretion to decide who can read, write, or execute the resource, making it flexible but potentially less secure.</p>
                 <p>For example, a project lead grants a manager temporary permission to edit a project document. In this case, the project lead, as the resource owner, assigns the "Edit" permission to the manager for the specific document. The system enforces this by validating the manager’s access rights before allowing any changes. If the manager’s permissions align with the owner’s delegation, access is granted, otherwise, it is denied.</p>
-                <p>DAC’s strength lies in its simplicity and adaptability, making it suitable for environments where resource owners have a clear understanding of access requirements. However, it demands ongoing monitoring to ensure permissions are up-to-date and do not expose resources to unnecessary risk.
-                    <a href="#r16">[16]</a> <a href="#17">[17]</a>
-                </p>
+                <p>DAC’s strength lies in its simplicity and adaptability, making it suitable for environments where resource owners have a clear understanding of access requirements. However, it demands ongoing monitoring to ensure permissions are up-to-date and do not expose resources to unnecessary risk.</p>
                 <figure>
                     <img src="DAC.png" alt="Aktivitätsübersicht"/>
                     <figcaption>
-                      <strong>Image 2</strong>: How does DAC work<a href="#i13">[24]</a>.
+                      <strong>Abbildung 3</strong>: Übersicht der Aktivität <a href="#r13">[13]</a>.
                     </figcaption>
                   </figure>
 
@@ -159,14 +152,12 @@
                     Consider a classified document labeled as "Top Secret." Only users with a "Top Secret" clearance can access it, regardless of their role or position. In this scenario, a government employee with a lower clearance, such as "Confidential," attempts to open the document. The system evaluates the user’s clearance level and denies access, ensuring that only authorized individuals with matching or higher clearances can interact with sensitive data.
                   </p>
                   <p>
-                 
                     MAC’s structured approach minimizes the risk of human error by enforcing strict rules. While this enhances security, it can also limit flexibility, making it most effective in highly regulated environments where maintaining data confidentiality is paramount.
-                 <a href="#r17">[17]</a>
-                </p>
+                  </p>
                 <figure>
                     <img src="MAC.png" alt="Aktivitätsübersicht"/>
                     <figcaption>
-                      <strong>Image 3</strong>: How does MAC work <a href="#i13">[25]</a>.
+                      <strong>Abbildung 3</strong>: Übersicht der Aktivität <a href="#r13">[13]</a>.
                     </figcaption>
                   </figure>
 
@@ -184,12 +175,11 @@
                   </p>
                   <p>
                     RBAC enhances security and simplifies administration by reducing the need for individual access assignments. By assigning roles that align with job responsibilities, organizations can ensure that access is both efficient and compliant with policies.
-                    <a href="#r18">[18]</a>
                   </p>
                   <figure>
                     <img src="RBAC.png" alt="Aktivitätsübersicht" style="box-shadow: none;"/>
                     <figcaption>
-                      <strong>Image 4</strong>: How does RBAC work <a href="#i13">[24]</a>.
+                      <strong>Abbildung 3</strong>: Übersicht der Aktivität <a href="#r13">[13]</a>.
                     </figcaption>
                   </figure>
 
@@ -265,9 +255,7 @@
 
                 <p>As granularity increases, access control policies become more detailed, focusing on specific attributes such as the individual user, resource type, or environmental conditions. At the highest level, access decisions can be made dynamically in real-time, factoring in multiple changing conditions such as location, time, or device security status.</p>
               
-                <p>While higher granularity improves security by minimizing unauthorized access and tailoring permissions to exact needs, it introduces greater complexity in management and implementation. Lower granularity, on the other hand, simplifies administration but may lack the precision necessary for environments requiring strict access control. Finding the right balance between granularity and manageability is crucial for effective and scalable access control in any organization.
-                    <a href="#r14">[14]</a>  <a href="#r15">[15]</a>
-                </p>
+                <p>While higher granularity improves security by minimizing unauthorized access and tailoring permissions to exact needs, it introduces greater complexity in management and implementation. Lower granularity, on the other hand, simplifies administration but may lack the precision necessary for environments requiring strict access control. Finding the right balance between granularity and manageability is crucial for effective and scalable access control in any organization.</p>
                 <footer>
                     <p style="color:rgba(195, 198, 201, 0.812);">Klea Haxhiu</p>
                 </footer>
@@ -324,24 +312,24 @@
                     In this section, we focus on the innovative technologies that are shaping access control for knowledge graphs. With the growing importance of data security and privacy, new trends such as blockchain, AI, machine learning, and federated learning are playing a crucial role in enhancing access control systems.
                 </p>
 
+               
                 <p>
-                    Blockchain is increasingly being used to ensure robust data integrity in access control systems. 
-                    It functions as a decentralized digital ledger that makes it difficult for unauthorized users to tamper with data.
-                     The main advantage of blockchain is its transparency and immutability—once data is added to the blockchain, it cannot be altered without consensus from the network. This provides a secure and reliable way to track changes in access permissions, making it highly suitable for scenarios requiring verifiable audit trails, such as in knowledge graphs .
-                     <a href="#r19">[19]</a>  <a href="#r22">[22]</a>
+                    Blockchain is increasingly being used to ensure robust data integrity in access control systems. It functions as a decentralized digital ledger that makes it difficult for unauthorized users to tamper with data. The main advantage of blockchain is its transparency and immutability—once data is added to the blockchain, it cannot be altered without consensus from the network. This provides a secure and reliable way to track changes in access permissions, making it highly suitable for scenarios requiring verifiable audit trails, such as in knowledge graphs <a href="https://www.example.com">[1]</a> <a href="https://www.axiomatics.com">[2]</a>.
                 </p>
 
+                
                 <p>
-                    Machine learning is a powerful tool for adapting access control policies in real-time. It analyzes patterns in user behavior, access requests, and environmental conditions to determine who should be granted access to which resources. By continuously learning from these patterns, machine learning-based systems can automatically update and optimize access control rules. This helps ensure that access policies evolve with changing security needs and user behaviors, providing a more dynamic and responsive approach to security .
-                    <a href="#r21">[21]</a>
+                    Machine learning is a powerful tool for adapting access control policies in real-time. It analyzes patterns in user behavior, access requests, and environmental conditions to determine who should be granted access to which resources. By continuously learning from these patterns, machine learning-based systems can automatically update and optimize access control rules. This helps ensure that access policies evolve with changing security needs and user behaviors, providing a more dynamic and responsive approach to security <a href="https://www.example.com">[3]</a>.
                 </p>
                 <p>
-                    AI-driven security extends the capabilities of machine learning by adding predictive analysis and automated decision-making. AI systems can monitor access patterns and predict potential security threats, adjusting access control policies proactively to prevent unauthorized access <a href="#i22">[22]</a>.
+                    AI-driven security extends the capabilities of machine learning by adding predictive analysis and automated decision-making. AI systems can monitor access patterns and predict potential security threats, adjusting access control policies proactively to prevent unauthorized access <a href="https://www.wallarm.com">[4]</a>.
                 </p>
 
+               
                 <p>
-                    Federated learning is a cutting-edge technique that enhances privacy in access control systems. It enables multiple parties to collaboratively train machine learning models without sharing sensitive data. Instead of transferring raw data, each participant only shares model updates, preserving privacy while still benefiting from collective insights. This approach is particularly valuable in scenarios where data privacy is paramount, such as in healthcare, finance, and other industries dealing with sensitive information <a href="#r23">[23]</a>.
+                    Federated learning is a cutting-edge technique that enhances privacy in access control systems. It enables multiple parties to collaboratively train machine learning models without sharing sensitive data. Instead of transferring raw data, each participant only shares model updates, preserving privacy while still benefiting from collective insights. This approach is particularly valuable in scenarios where data privacy is paramount, such as in healthcare, finance, and other industries dealing with sensitive information <a href="https://www.example.com">[5]</a>.
                 </p>
+
                 <p>
                     These emerging trends—blockchain, machine learning, AI-driven security, and federated learning—represent significant advancements in how access control for knowledge graphs is implemented. By integrating these technologies, organizations can enhance both the security and privacy of their data while ensuring compliance with ever-evolving regulatory requirements.
                 </p>
@@ -363,9 +351,7 @@
                     <p style="color:rgba(195, 198, 201, 0.812);">Erisa Zaimi</p>
                 </footer>
                 <h4>5.2 Future directions in access control models for knowledge graphs</h4>
-                <p>In the future, access control models for knowledge graphs will need to become more flexible and efficient to handle growing data complexity. New methods may focus on using AI and machine learning to improve decision-making and automate permissions. Standardized metadata tagging and real-time updates will also be important to ensure consistent security. Additionally, scalable solutions will be needed to support large and evolving graphs without slowing down performance.
-                    <a href="#r24">[24]</a>
-                </p>
+                <p>In the future, access control models for knowledge graphs will need to become more flexible and efficient to handle growing data complexity. New methods may focus on using AI and machine learning to improve decision-making and automate permissions. Standardized metadata tagging and real-time updates will also be important to ensure consistent security. Additionally, scalable solutions will be needed to support large and evolving graphs without slowing down performance.</p>
                 <footer>
                     <p style="color:rgba(195, 198, 201, 0.812);">Klea Haxhiu</p>
                 </footer>
@@ -387,26 +373,11 @@
              <p class="reference" id="r11">[11] M. B. Almeida, F. M. Ribeiro, and F. L. Bezerra, "Graph-Based Access Control: What, Why and How," <i>KuppingerCole</i>, 2023. [Online]. Available: <a href="https://www.kuppingercole.com/watch/graph-based-access-control-eic2023">https://www.kuppingercole.com/watch/graph-based-access-control-eic2023</a>(27.12.2024)</p>
              <p class="reference" id="r12">[12] Sandhu, Ravi, and Jaehong Park, "Usage Control: A Vision for Next Generation Access Control," <i>Lecture Notes in Computer Science</i>, vol. 2776, pp. 17-31, 2003. [Online]. Available: <a href="https://link.springer.com/chapter/10.1007/978-3-540-45215-7_2">https://link.springer.com/chapter/10.1007/978-3-540-45215-7_2</a>(27.12.2024)</p>
              <p class="reference" id="r13">[13] Park, Jaehong, and Ravi Sandhu, "Towards Usage Control Models: Beyond Traditional Access Control," <i>Proceedings of the 7th ACM Symposium on Access Control Models and Technologies</i>, 2002. [Online]. Available: <a href="https://profsandhu.com/confrnc/sacmat/2002-UCON.pdf">https://profsandhu.com/confrnc/sacmat/2002-UCON.pdf</a>(27.12.2024)</p>
-             <p class="reference" id="r14">[14] Xu, H., Liu, Y., & Li, Q., "Fine-grained access control models for cloud computing," <i>International Journal of Computer Applications</i>, vol. 39, no. 4, pp. 18-25, 2012. [Online]. Available: <a href="https://www.ijcaonline.org/archives/volume39/number4/5736-7844">https://www.ijcaonline.org/archives/volume39/number4/5736-7844</a> (23.01.2025)</p>
-             <p class="reference" id="r14">[14] DataSunrise, "Granular data access control," [Online]. Available: <a href="https://www.datasunrise.com">https://www.datasunrise.com</a> (09.12.2024)</p>
-             <p class="reference" id="r15">[15] NIST Special Publication 800-53: Security and Privacy Controls for Federal Information Systems and Organizations, [Online]. Available: <a href="https://www.nist.gov/publications/security-and-privacy-controls-federal-information-systems-and-organizations">https://www.nist.gov/publications/security-and-privacy-controls-federal-information-systems-and-organizations</a> (09.12.2024)</p>
-             <p class="reference" id="r16">[16] Shah, M., "Introduction to Discretionary Access Control (DAC), Mandatory Access Control (MAC), Role-Based Access Control (RBAC), and Attribute-Based Access Control (ABAC)," 2020, [Online]. Available: <a href="https://www.example.com">https://www.example.com</a> (09.12.2024)</p>
-            <p class="reference" id="r17">[17] Syteca, "MAC vs DAC," 2024. [Online]. Available: <a href="https://www.sypteca.com">https://www.sypteca.com</a>. (19.12.2024)</p>
-            <p class="reference" id="r18">[18] Wallarm, "What Exactly is Role-Based Access Control (RBAC)?," 2024. [Online]. Available: <a href="https://www.wallarm.com">https://www.wallarm.com</a>. (19.12.2024)</p>
-            <p class="reference" id="r19">[19] M. Shah, "Introduction to Discretionary Access Control (DAC), Mandatory Access Control (MAC), Role-Based Access Control (RBAC), and Attribute-Based Access Control (ABAC)," 2020. [Online]. Available: <a href="https://www.example.com">https://www.example.com.</a></p>
-            <p class="reference" id="r21">[21] X. Rui and X. Chen, "Access Control Models and Their Applications in Knowledge Graphs," 2021. [Online]. Available: <a href="https://www.example.com">https://www.example.com.</a></p>
-
-            <p class="reference" id="i22">[22] Wallarm, "What Exactly is Role-Based Access Control (RBAC)?," 2024. [Online]. Available: <a href="https://www.wallarm.com">https://www.wallarm.com.</a></p>
-
-            <p class="reference" id="r23">[23] A. Ouaddah, H. Mousannif, A. Abou Elkalam, and A. Ait Ouahman, "Access control in the Internet of Things: Big challenges and new opportunities," n.d. [Online]. Available: <a href="https://www.example.com">https://www.example.com.</a></p>
-            <p class="reference" id="r24">[24] M. You, J. Yin, H. Wang, J. Cao, K. Wang, Y. Miao, and E. Bertino, "A knowledge graph empowered online learning framework for access control decision-making," <i>World Wide Web</i>, vol. 26, pp. 827-848, 2023. [Online]. Available: <a href="http://www.boxcryptor.com">http://www.boxcryptor.com</a>.</p>
-
-        
+             
+             
              <!-- Images -->
              <p class="reference" id="r22">[22] Axiomatics, "Intro to Attribute-Based Access Control (ABAC)," <i>Axiomatics Blog</i>, 2018. [Online]. Available: <a href="https://axiomatics.com/blog/intro-to-attribute-based-access-control-abac">https://axiomatics.com/blog/intro-to-attribute-based-access-control-abac</a>(5.10.2024)</p>
              <p class="reference" id="r23">[23] S. Kandala, R. Sandhu, and V. Bhamidipati, "UCON Model with RAdAC Components," <i>ResearchGate</i>, 2011. [Online]. Available: <a href="https://www.researchgate.net/figure/UCON-Model-with-RAdAC-Components-from-Kandala-Sandhu-and-Bhamidipati-2011-Kandala_fig1_316871105">https://www.researchgate.net/figure/UCON-Model-with-RAdAC-Components-from-Kandala-Sandhu-and-Bhamidipati-2011-Kandala_fig1_316871105</a>(9.11.2024)</p>
-             <p class="reference" id="i13">[24] Wallarm, "What Exactly is Role-Based Access Control (RBAC)?," 2024. [Online]. Available: <a href="https://www.wallarm.com/what/what-exactly-is-role-based-access-control-rbac">https://www.wallarm.com/what/what-exactly-is-role-based-access-control-rbac</a>.</p>
-             <p class="reference" id="i13">[25] Syteca, "MAC vs DAC," Syteca Blog, [Online]. Available: <a href="https://www.syteca.com/en/blog/mac-vs-dac">https://www.syteca.com/en/blog/mac-vs-dac</a>. (23.01.2025)</p>
 
      
         </div>
