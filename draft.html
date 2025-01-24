@@ -28,6 +28,9 @@
             <h2>1. Introduction</h2>
             <p>As the volume and complexity of data continue to grow, organizations are increasingly relying on advanced data management techniques to extract meaningful insights. Knowledge graphs have emerged as a powerful solution to connect and organize data, enabling smarter decision-making and improved efficiency across various domains.  
             </p>
+            <footer>
+                <p style="color:rgba(195, 198, 201, 0.812);">Erisa Zaimi</p>
+            </footer>
             <div class="subsection">
                 <h4>1.1 What are Knowledge Graphs</h4>
                 <p>A knowledge graph is a sophisticated data structure designed to organize and represent information in a highly interconnected manner. It achieves this by modeling data as a network consisting of <i>nodes</i> and <i>edges</i>, where <i>nodes</i> represent distinct pieces of information and <i>edges</i> establish relationships between them. Unlike traditional relational databases that rely on tables and predefined schemas, knowledge graphs offer a more flexible and intuitive way to capture relationships between diverse data points.  
@@ -61,6 +64,9 @@
         <div class="section">
             <h2>2. Background</h2>
             <p>This section provides an overview of knowledge graphs, their importance, the need for access control, the purpose and goals of access control models, their structure, and the challenges involved in applying them.</p>
+            <footer>
+                <p style="color:rgba(195, 198, 201, 0.812);">Erisa Zaimi</p>
+            </footer>
             <div class="subsection">
                 <h4>2.1 Why are Knowledge Graphs Important</h4>
             <p>Knowledge graphs help connect and organize information from different sources, making data easier to find and understand. They improve decision-making, streamline operations, and automate tasks by linking related data with added meaning. Businesses use them to combine information from databases, documents, and websites, leading to better efficiency and planning.
@@ -85,7 +91,9 @@
             <div class="subsection">
                 <h4>2.3 Purpose and Goals of Access Control Models</h4>
                 <p>
-                    <p>Access control models are foundational frameworks designed to manage and regulate access to sensitive organizational resources. By establishing clear rules about who can access specific data or systems and under what conditions, these models play a critical role in maintaining security, ensuring compliance, and supporting operational efficiency. Their implementation is not just about limiting access, it is a proactive approach to safeguarding assets, maintaining organizational trust, and enabling scalability.</p>
+                    <p>Access control models are foundational frameworks designed to manage and regulate access to sensitive organizational resources. By establishing clear rules about who can access specific data or systems and under what conditions, these models play a critical role in maintaining security, ensuring compliance, and supporting operational efficiency. Their implementation is not just about limiting access, it is a proactive approach to safeguarding assets, maintaining organizational trust, and enabling scalability.
+                        <a href="#r5">[5]</a>
+                    </p>
                     <p>The primary purpose of access control models is to protect sensitive information and resources from unauthorized access while ensuring that legitimate users can perform their roles without unnecessary hindrance. By doing so, these models enforce confidentiality, which ensures that information is only accessible to those with the appropriate authorization. They also preserve data integrity, preventing unauthorized modifications, and uphold availability by enabling seamless access for authorized users.</p>
                     <p>In a world where cyberattacks and data breaches are increasingly common, the significance of access control models has grown exponentially. These frameworks act as a first line of defense, providing organizations with the tools to proactively manage threats and minimize vulnerabilities. Beyond the technical benefits, robust access control measures demonstrate an organization’s commitment to responsible data stewardship, which fosters trust among customers, partners, and stakeholders.</p>
                     <p>By implementing strong access control systems, organizations not only protect their assets but also create an environment of transparency and accountability. This is vital in establishing and maintaining trust, which is a cornerstone of long-term success in an interconnected and competitive global market.
@@ -101,7 +109,7 @@
                 <h4>2.4 Access Control Structure</h4>
                
                     <p>The access control structure defines how access to resources is managed and enforced. It consists of three primary components: subjects, objects, and policies.</p>
-                    <p>Subjects refer to the users or entities that request access to specific resources or systems. These can include employees, applications, or even other systems that require permissions. Objects, on the other hand, are the resources or data that are being protected. These could be files, databases, network devices, or other assets within an organization. Lastly, policies represent the set of rules or conditions that determine who can access which objects and under what circumstances. These rules are crucial for ensuring that access aligns with the organization’s security protocols and compliance requirements.</p>
+                    <p>Subjects refer to the users or entities that request access to specific resources or systems. These can include employees, applications, or even other systems that require permissions. Objects, on the other hand, are the resources or data that are being protected. These could be files, databases, network devices, or other assets within an organization. Lastly, policies represent the set of rules or conditions that determine who can access which objects and under what circumstances. These rules are crucial for ensuring that access aligns with the organization’s security protocols and compliance requirements.<a href="#r16">[16]</a></p>
                     <p>When a subject makes an access request, the system evaluates the request against these policies. Permissions are granted or denied based on predefined rules, and additional constraints—such as time, location, or specific user attributes—can be applied to ensure that access is in line with organizational requirements.</p>
                     <p>For example, in a corporate environment, a subject, such as an employee, might request access to an object, such as a financial report. The policy governing this access might specify that the report can only be accessed during working hours and from a secure office network, ensuring both security and compliance.
                         <a href="#r16">[16]</a>
@@ -131,10 +139,15 @@
 
         <div class="section">
             <h2>3. Exploring Access Control Models</h2>
-            <p>This section provides an in-depth exploration of various access control models, each offering unique approaches to managing and securing access to resources based on different criteria and conditions.</p>
+            <p>As organizations face increasingly complex security challenges, selecting the most appropriate model becomes essential for balancing flexibility, granularity, and security. These models differ in how they handle user roles, permissions, and contextual factors, ensuring that access control is tailored to specific needs, whether for enterprise environments, collaborative projects, or sensitive data management.</p>
+            <footer>
+                <p style="color:rgba(195, 198, 201, 0.812);">Klea Haxhiu</p>
+            </footer>
             <div class="subsection">
                 <h4>3.1 Discretionary Access Control (DAC)</h4>
-                <p>Discretionary Access Control (DAC) is a type of access control in which the owner of the resource determines who can access it and what type of access they have. In DAC, access rights are granted based on the identity of the user and the permissions assigned to specific objects. The owner of the resource has the discretion to decide who can read, write, or execute the resource, making it flexible but potentially less secure.</p>
+                <p>Discretionary Access Control (DAC) is a type of access control in which the owner of the resource determines who can access it and what type of access they have. In DAC, access rights are granted based on the identity of the user and the permissions assigned to specific objects. The owner of the resource has the discretion to decide who can read, write, or execute the resource, making it flexible but potentially less secure.
+                    <a href="#r19">[19]</a>
+                </p>
                 <p>For example, a project lead grants a manager temporary permission to edit a project document. In this case, the project lead, as the resource owner, assigns the "Edit" permission to the manager for the specific document. The system enforces this by validating the manager’s access rights before allowing any changes. If the manager’s permissions align with the owner’s delegation, access is granted, otherwise, it is denied.</p>
                 <p>DAC’s strength lies in its simplicity and adaptability, making it suitable for environments where resource owners have a clear understanding of access requirements. However, it demands ongoing monitoring to ensure permissions are up-to-date and do not expose resources to unnecessary risk.
                     <a href="#r16">[16]</a> <a href="#17">[17]</a>
@@ -258,7 +271,11 @@
         </div>
 
         <div class="section">
-            <h2>4. Demo</h2>
+            <h2>4. Advancing Access Control Models for Knowledge Graphs</h2>
+            <p>This section delves into the various access control models, each presenting distinct methodologies for managing and securing access to resources, tailored to different needs and contexts. By examining these models, we gain insights into their strengths, limitations, and the specific scenarios in which they excel.</p>
+            <footer>
+                <p style="color:rgba(195, 198, 201, 0.812);">Klea Haxhiu</p>
+            </footer>
             <div class="subsection">
                 <h4>4.1 Granularity</h4>
                 <p>Granularity in access control refers to the level of precision and detail in defining and enforcing access rules. It determines how specific the policies are when granting or denying access to resources. At the lower end of the granularity spectrum, rules are broad and apply to larger groups or categories, making them simpler to manage but less precise in addressing unique access requirements.</p>
@@ -363,7 +380,13 @@
                     <p style="color:rgba(195, 198, 201, 0.812);">Erisa Zaimi</p>
                 </footer>
                 <h4>5.2 Future directions in access control models for knowledge graphs</h4>
-                <p>In the future, access control models for knowledge graphs will need to become more flexible, adaptive, and efficient to handle the growing complexity and diversity of data. Emerging methods may increasingly leverage artificial intelligence (AI) and machine learning (ML) to enhance decision-making processes, predict access patterns, and automate permission management based on user behavior and context. Standardized metadata tagging, combined with real-time updates, will play a critical role in maintaining consistent security across distributed systems. Furthermore, scalable and robust solutions will be essential to support the demands of large and continuously evolving graphs, ensuring high performance and minimal latency even as datasets expand and interconnectivity grows. <a href="#r24">[24]</a>
+                <p>Future access control models for knowledge graphs will emphasize flexibility, contextual awareness, and user-centric security to address the growing diversity of data and its usage. These models will move beyond static rules, integrating dynamic systems that respond to real-time scenarios. For instance, context-aware solutions could analyze factors such as device type, location, and time of access to provide permissions tailored to specific situations. This would enable more granular and adaptive controls, ensuring that access policies align with both organizational needs and user behavior.</p>
+
+                   <p> While AI and machine learning will support automation and predictive analytics, their role in future access control may be complemented by emerging technologies like zero-trust architectures and semantic reasoning engines. These tools could enhance decision-making by interpreting relationships within the knowledge graph, providing a deeper understanding of data interconnectivity and access requirements.</p>
+                    
+                  <p>  Furthermore, scalable solutions will become critical as knowledge graphs grow in size and complexity. Distributed architectures and efficient metadata management will ensure systems maintain high performance without compromising security. As these innovations evolve, the focus will also shift toward improving user experience by minimizing unnecessary access barriers while safeguarding sensitive data.</p>
+                    
+                 <p>  In this evolving landscape, access control systems must not only protect data but also foster trust, compliance, and usability, positioning organizations to address future challenges with agility and resilience.</p>
                 </p>
                 <footer>
                     <p style="color:rgba(195, 198, 201, 0.812);">Klea Haxhiu</p>
